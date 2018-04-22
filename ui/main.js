@@ -6,9 +6,9 @@ element.onclick=function(){
 };
 
 var img=document.getElementById('img');
+   var marginLeft;
 function moveRight(){
-  var marginLeft;
-   marginLeft+=3;
+  marginLeft=marginLeft+3;
  img.style.marginLeft=marginLeft+'px';
 }
 img.onclick=function(){

@@ -6,7 +6,7 @@ element.onclick=function(){
 };
 
 var img=document.getElementById('img');
-   var marginLeft;
+   var marginLeft=0;
 function moveRight(){
   marginLeft=marginLeft+3;
  img.style.marginLeft=marginLeft+'px';

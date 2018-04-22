@@ -21,7 +21,7 @@ var articles={
                       This is my first HTML page.This is my first HTML page.This is my first HTML page.This is my first HTML page.This is my first HTML page.This is my first HTML page.This is my first HTML page.This is my first HTML page.This is my first HTML page.This is my first HTML page.This is my first HTML page.This is my first HTML page.
                   </p>`
 },
-    'article-two':{
+    'article-two': {
     title:'Article Two!Ankesh Kumar',
     heading:'Article Two',
     date:'6 April,2018',

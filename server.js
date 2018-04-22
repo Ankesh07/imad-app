@@ -25,16 +25,16 @@ var articles={
     title:'Article Two!Ankesh Kumar',
     heading:'Article Two',
     date:'6 April,2018',
-    content: `<p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p>
+    content: `<div><p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p>
                 <p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p>
-                <p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p>`},
+                <p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p></div>`},
     'article-three':{
     title:'Article Three!Ankesh Kumar',
     heading:'Article Three',
     date:'24 Sep,2018',
-    content: `<p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p>
+    content: `<div><p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p>
                 <p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p>
-                <p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p>`}
+                <p>This is an HTML page</p><p>This is an HTML page</p><p>This is an HTML page</p></div>`}
 };
 function createTemplate(data){
     var title=data.title;

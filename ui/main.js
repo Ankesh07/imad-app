@@ -5,7 +5,7 @@ element.onclick=function(){
     element.innerHTML='Rit@nku';
 };
 
-var img=document.getElementByTagsName('img');
+var img=document.getElementById('img');
 img.onclick=function(){
   img.style.marginLeft='100px';  
 };

@@ -62,6 +62,9 @@ var htmlTemplate=`<html>
               <div>
                  ${content}
               </div>
+              <div class="footer">
+                <input type="submit" id="submit" value="ClickMe"/>
+              </div>
     </div>
  </body>
     

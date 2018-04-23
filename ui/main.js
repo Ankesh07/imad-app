@@ -33,6 +33,7 @@ submit.onclick=function(){
    if(request.readyState===XMLHttpRequest.DONE){
        if(request.status===200){
           var names=request.responseText;
+          names=JSON.parse(names);
           var list='';
           for(var i=0;i<names.length;i++)
            list+='<li>'+names[i]+'</li>'
@@ -41,5 +42,11 @@ submit.onclick=function(){
        var names=nameInput.value;
        var ul=document.getElementById(nameList);
         ul.innerHTML=list;
-   }  }
+   }  };
+
+request.open('GET','http://ankeshnayak07jan.imad.hasura-app.io/submit-name/:name',true);
+request.send(null);
+   
+   
  };
+ 

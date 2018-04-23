@@ -18,5 +18,5 @@ img.onclick=function(){
 var counter=document.getElementById('counter');
 var count=document.getElementById('count');
 counter.onclick=function(){
-    count=count+1;
+    count.innerHTML=count+1;
 }

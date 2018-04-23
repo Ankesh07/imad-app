@@ -27,7 +27,7 @@ button.onclick=function () {
 var submit=document.getElementById('submitBtn');
 submit.onclick=function(){
 //Makes a request to the server and sends name
- var request= new XMLHttoRequest();
+ var request= new XMLHttpRequest();
 //Capture a list of name and renden it on list
  request.onreadystatechange=function(){
    if(request.readyState===XMLHttpRequest.DONE){

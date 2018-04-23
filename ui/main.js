@@ -1,13 +1,13 @@
 
 var button=document.getElementById('counter');
 
-button.onclick=function(){
+button.onclick=function () {
     
 //Create a request Object
- var request=new XMLHttpRequest();
+ var request= new XMLHttpRequest();
  
 //Capture the response and store it to variable
- request.onreadystatechange=function(){
+ request.onreadystatechange=function (){
      if(request.readystate===XMLHttpRequest.DONE){
          if(request.status===200){
              var counter=request.responseText;
@@ -18,6 +18,6 @@ button.onclick=function(){
      
  };
 //Make a request
- request.open('GET','http://ankeshnayak07jan.imad.hasura-app.io',true);
+ request.open('GET','http://ankeshnayak07jan.imad.hasura-app.io/counter',true);
  request.send(null)
 };

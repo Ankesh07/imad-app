@@ -19,5 +19,5 @@ button.onclick=function(){
  };
 //Make a request
  request.open('GET','http://ankeshnayak07jan.imad.hasura-app.io',true);
- request.send(null);
+ request.send(null)
 };

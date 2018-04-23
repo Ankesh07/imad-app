@@ -1,7 +1,8 @@
 
 var counter=document.getElementById('counter');
 var count=document.getElementById('count');
-count=0;
+counter=0;
 counter.onclick=function(){
-    count.innerHTML=count.toString();
+    counter=counter+1;
+    count.innerHTML=counter.toString();
 };

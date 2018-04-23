@@ -24,17 +24,22 @@ button.onclick=function () {
 
 //Submit a Name
 
-var nameInput=document.getElementById('name');
-var name=nameInput.value;
 var submit=document.getElementById('submitBtn');
 submit.onclick=function(){
 //Makes a request to the server and sends name
+ var request= new XMLHttoRequest();
 //Capture a list of name and renden it on list
-var names=['name1','naem2','name3','name4'];
-var list='';
-for(var i=0;i<names.length;i++){
-    list +='<li>'+names[i]+'</li>'
-}
-var ul=document.getElementById('nameList');
-ul.innerHTML=list;
-};
+ request.onreadystatechange=function(){
+   if(request.readyState===XMLHttpRequest.DONE){
+       if(request.status===200){
+          var names=request.responseText;
+          var list='';
+          for(var i=0;i<names.length;i++)
+           list+='<li>'+names[i]+'</li>'
+       }
+       var nameInput=document.getElementById('name');
+       var names=nameInput.value;
+       var ul=document.getElementById(nameList);
+        ul.innerHTML=list;
+   }  }
+ };

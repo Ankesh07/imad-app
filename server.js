@@ -63,6 +63,7 @@ var htmlTemplate=`<html>
                  ${content}
               </div>
               <div class="footer">
+                <input type="text" id="comment" placeholder="Comment"/>
                 <input type="submit" id="submit" value="ClickMe"/>
               </div>
     </div>

@@ -35,15 +35,16 @@ submit.onclick=function(){
           var names=request.responseText;
           names=JSON.parse(names);
           var list='';
-          for(var i=0;i<names.length;i++)
+          for(var i=0;i<names.length;i++){
            list+='<li>'+names[i]+'</li>'
-       }
-       var nameInput=document.getElementById('name');
-       var names=nameInput.value;
+      } 
+       
        var ul=document.getElementById(nameList);
         ul.innerHTML=list;
-   }  };
+   } } };
 
+var nameInput=document.getElementById('name');
+        names=nameInput.value;
 request.open('GET','http://ankeshnayak07jan.imad.hasura-app.io/submit-name/:name',true);
 request.send(null);
    

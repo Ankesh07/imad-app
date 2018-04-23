@@ -1,8 +1,23 @@
 
 var button=document.getElementById('counter');
-counter=0;
+
 button.onclick=function(){
-    var span=document.getElementById('count');
-    counter=counter+1;
-    span.innerHTML=counter.toString();
+    
+//Create a request Object
+ var request=new XMLhttpRequest();
+ 
+//Capture the response and store it to variable
+ request.onreadystatechange=function(){
+     if(request.readystate==XMLhttpRequest.DONE){
+         if(request.status==200){
+             var counter=request.responseText();
+             var span=document.getElementById('count');
+              span.innerHTML=counter.toString();
+         }
+     }
+     
+ };
+//Make a request
+ request.open('GET','http://ankeshnayak07jan@imad.hasura-app.io');
+ request.send(null);
 };
